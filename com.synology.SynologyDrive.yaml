@@ -9,10 +9,8 @@ finish-args:
   - --filesystem=home
   - --share=network
   - --socket=x11
-  - --socket=wayland
   - --share=ipc
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --env=LD_LIBRARY_PATH=/app/lib
   - --talk-name=org.freedesktop.Notifications
 modules:
   - name: synology-drive
@@ -26,9 +24,6 @@ modules:
       - install -Dm644 synologydrive-256.png /app/share/icons/hicolor/256x256/apps/com.synology.SynologyDrive.png
       - install -D apply_extra -t /app/bin
       - cp /usr/bin/ar /app/bin
-      - ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so
-        /app/lib
-      - ARCH_TRIPLE=$(gcc --print-multiarch) && ln -s /usr/lib/${ARCH_TRIPLE}/libtinfo.so/app/lib/libtinfo.so.5
     sources:
       - type: script
         dest-filename: apply_extra
