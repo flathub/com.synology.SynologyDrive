@@ -6,3 +6,4 @@ Icon=com.synology.SynologyDrive
 Terminal=false
 Type=Application
 Categories=Network;FileTransfer;
+StartupWMClass=cloud-drive-ui
