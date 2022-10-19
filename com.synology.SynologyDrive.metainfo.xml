@@ -14,13 +14,13 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://www.synology.com/img/dsm/drive/revamp_20190424/seamlessly_01.jpg</image>
+      <image>https://www.synology.com/img/dsm/drive/seamlessly_01.jpg</image>
       <caption>Seamlessly syncing and backing up</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">com.synology.SynologyDrive.desktop</launchable>
   <releases>
-    <release version="3.1.0" release="12920" date="2022-04-06"/>
+    <release version="3.1.0" release="12923" date="2022-04-28"/>
     <release version="3.0.3" release="12689" date="2022-01-11"/>
     <release version="3.0.2" release="12682" date="2021-10-12"/>
     <release version="3.0.1" release="12667" date="2021-06-29"/>
