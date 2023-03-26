@@ -13,7 +13,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
   # Need for system tray icon to work
-  #- --own-name=org.kde.StatusNotifierItem-7-1
+  - --own-name=org.kde.*
 modules:
   - name: synology-drive
     buildsystem: simple
@@ -49,6 +49,6 @@ modules:
       - type: extra-data
         filename: synology-drive.deb
         only-arches: [x86_64]
-        url: https://global.download.synology.com/download/Utility/SynologyDriveClient/3.1.0-12923/Ubuntu/Installer/x86_64/synology-drive-client-12923.x86_64.deb
-        sha256: 80bd3cb896c0d92f92b8fd5a7cc06670930872eed04737625e020cc5265097f2
-        size: 100413030
+        url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.2.1-13272/Ubuntu/Installer/x86_64/synology-drive-client-13272.x86_64.deb
+        sha256: a25391062a7202fde3610ec6bfc8b8747a0201d31c4dc251ef6fd46023c056dd
+        size: 100956710
