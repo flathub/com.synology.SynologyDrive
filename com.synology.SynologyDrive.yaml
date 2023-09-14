@@ -52,3 +52,8 @@ modules:
         url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.3.0-15082/Ubuntu/Installer/x86_64/synology-drive-client-15082.x86_64.deb
         sha256: 85adca4691084fbc3aa54554c19574d755b517fbff84dabd7f702b7f35346467
         size: 101062840
+        x-checker-data:
+          type: html
+          url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
+          version-pattern: "Version: (\\d+\\.\\d+\\.\\d+-\\d*)"
+          url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/x86_64/synology-drive-client-$version4.x86_64.deb
