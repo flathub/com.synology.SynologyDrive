@@ -51,6 +51,7 @@ modules:
         only-arches: [x86_64]
         url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.4.0-15724/Ubuntu/Installer/synology-drive-client-15724.x86_64.deb
         sha256: 65fe89320857cbc3836d1e0c85548f983e100eed34dcc4dced835f6e24554686
+        size: 101495674
         x-checker-data:
           type: html
           url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
