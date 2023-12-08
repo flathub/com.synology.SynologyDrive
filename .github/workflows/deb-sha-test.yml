@@ -1,0 +1,20 @@
+name: Deb sha test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Run tests
+        run: |
+          cd tests
+          pipenv install
+          pipenv run pytest
