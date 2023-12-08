@@ -8,8 +8,7 @@ tags: [proprietary]
 finish-args:
   - --share=ipc
   - --share=network
-  - --socket=fallback-x11
-  - --socket=wayland
+  - --socket=x11
   - --system-talk-name=org.freedesktop.login1
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
