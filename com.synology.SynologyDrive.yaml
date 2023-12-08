@@ -6,15 +6,14 @@ sdk: org.freedesktop.Sdk
 command: synology-drive
 tags: [proprietary]
 finish-args:
-  - --filesystem=home
+  - --share=ipc
   - --share=network
   - --socket=fallback-x11
   - --socket=wayland
-  - --share=ipc
-  - --talk-name=org.kde.StatusNotifierWatcher
+  - --system-talk-name=org.freedesktop.login1
   - --talk-name=org.freedesktop.Notifications
-  # Need for system tray icon to work
-  - --own-name=org.kde.*
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --filesystem=home
 modules:
   - name: synology-drive
     buildsystem: simple
@@ -52,7 +51,6 @@ modules:
         only-arches: [x86_64]
         url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.4.0-15724/Ubuntu/Installer/synology-drive-client-15724.x86_64.deb
         sha256: 65fe89320857cbc3836d1e0c85548f983e100eed34dcc4dced835f6e24554686
-        size: 101062840
         x-checker-data:
           type: html
           url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
