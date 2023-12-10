@@ -12,7 +12,6 @@ finish-args:
   - --system-talk-name=org.freedesktop.login1
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.portal.Background
-  - --talk-name=org.gnome.SessionManager
   - --talk-name=org.kde.StatusNotifierWatcher
   - --filesystem=home
 modules:
@@ -57,4 +56,4 @@ modules:
           type: html
           url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
           version-pattern: "Version: (\\d+\\.\\d+\\.\\d+-\\d*)"
-          url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/x86_64/synology-drive-client-$version.x86_64.deb
+          url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/x86_64/synology-drive-client-$version4.x86_64.deb
