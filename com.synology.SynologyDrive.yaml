@@ -56,4 +56,4 @@ modules:
           type: html
           url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
           version-pattern: "Version: (\\d+\\.\\d+\\.\\d+-\\d*)"
-          url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/x86_64/synology-drive-client-$version4.x86_64.deb
+          url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/synology-drive-client-$version4.x86_64.deb
