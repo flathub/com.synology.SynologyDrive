@@ -10,7 +10,7 @@ finish-args:
   - --share=network
   - --socket=x11
   - --share=ipc
-  - --persist=.sabnzbd
+  - --persist=.SynologyDrive
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
   # Need for system tray icon to work
