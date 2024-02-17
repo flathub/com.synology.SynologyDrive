@@ -26,15 +26,12 @@ modules:
       - install -Dm644 synologydrive-128.png /app/share/icons/hicolor/128x128/apps/com.synology.SynologyDrive.png
       - install -Dm644 synologydrive-256.png /app/share/icons/hicolor/256x256/apps/com.synology.SynologyDrive.png
       - install -D apply_extra -t /app/bin
-      - cp /usr/bin/ar /app/bin
+      - cp /usr/bin/bsdtar /app/bin
     sources:
       - type: script
         dest-filename: apply_extra
         commands:
-          - ar x synology-drive.deb
-          - tar xf data.tar.xz
-          - mv opt/Synology/SynologyDrive SynologyDrive
-          - rm -r synology-drive.deb control.tar.gz data.tar.xz debian-binary usr
+          - bsdtar -Oxf synology-drive.deb 'data.tar.*' | bsdtar -xf - --strip-components=3 --exclude='./usr'
       - type: file
         path: synology-drive.sh
       - type: file
