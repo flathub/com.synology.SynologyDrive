@@ -53,6 +53,6 @@ modules:
         size: 101582466
         x-checker-data:
           type: html
-          url: https://www.synology.com/en-us/releaseNote/SynologyDriveClient
-          version-pattern: 'Version: (\d+\.\d+\.\d+-\d*)'
+          url: https://archive.synology.com/download/Utility/SynologyDriveClient
+          version-pattern: <a href=".+" rel="noreferrer noopener">(\d+\.\d+\.\d+-\d*)</a>
           url-template: https://global.synologydownload.com/download/Utility/SynologyDriveClient/$version/Ubuntu/Installer/synology-drive-client-$version4.x86_64.deb
