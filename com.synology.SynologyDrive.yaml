@@ -48,9 +48,9 @@ modules:
       - type: extra-data
         filename: synology-drive.deb
         only-arches: [x86_64]
-        url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.5.2-16110/Ubuntu/Installer/synology-drive-client-16110.x86_64.deb
-        sha256: a464b931951d0504d6e7c6b674de7563c075f26cdc3198ffc8560254fc0fee61
-        size: 103525220
+        url: https://global.synologydownload.com/download/Utility/SynologyDriveClient/3.5.2-16111/Ubuntu/Installer/synology-drive-client-16111.x86_64.deb
+        sha256: 75426eb0c38ee4364f696ac46f4bbf98711c22c36c120c9454df1b4719c8947c
+        size: 103543540
         x-checker-data:
           type: html
           url: https://archive.synology.com/download/Utility/SynologyDriveClient
