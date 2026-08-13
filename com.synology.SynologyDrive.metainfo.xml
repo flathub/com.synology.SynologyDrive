@@ -19,8 +19,11 @@
   </screenshots>
   <launchable type="desktop-id">com.synology.SynologyDrive.desktop</launchable>
   <releases>
-    <release version="4.0.3-17892" date="2026-05-12">
+    <release version="4.2.0-20058" date="2026-08-12">
       <description></description>
+    </release>
+    <release version="4.0.3-17892" date="2026-05-12">
+      <description/>
     </release>
     <release version="4.0.2-17889" date="2026-01-20">
       <description/>
